@@ -1,0 +1,40 @@
+{
+  "name": "atomjsx",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "tsc": "tsc",
+    "dev": "NODE_ENV=dev npm-run-all -p build:w serve",
+    "build": "rm -rf dist && webpack --config=./webpack.config.js",
+    "build:w": "nodemon -w src -e ts,tsx,html --exec npm run build",
+    "serve": "serve dist",
+    "lint": "eslint 'src/**/*.{mjs,js,jsx,ts,tsx}'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^14.14.14",
+    "@types/react": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.10.0",
+    "@typescript-eslint/parser": "^4.10.0",
+    "copy-webpack-plugin": "^7.0.0",
+    "css-loader": "^5.0.1",
+    "eslint": "^7.15.0",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-plugin-prettier": "^3.3.0",
+    "html-webpack-plugin": "^4.5.0",
+    "mini-css-extract-plugin": "^1.3.3",
+    "nodemon": "^2.0.6",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.2.1",
+    "serve": "^11.3.2",
+    "ts-loader": "^8.0.12",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3",
+    "webpack": "^5.11.0",
+    "webpack-cli": "^4.2.0"
+  }
+}

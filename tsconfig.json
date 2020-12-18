@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "es6",
+    "moduleResolution": "node",
+    "lib": ["dom", "dom.iterable", "es2019"],
+    "jsx": "react",
+    "jsxFactory": "Atom.createElement",
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true
+  },
+  "exclude": ["node_modules", "dist"]
+}
